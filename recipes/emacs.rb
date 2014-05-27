@@ -1,6 +1,6 @@
 execute "install emacs" do
   user node['current_user']
-  command "brew install emacs --cocoa"
+  command "brew install emacs --HEAD --use-git-head --cocoa --srgb"
 end
 
 execute "symlink emacs to Applications" do
